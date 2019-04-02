@@ -25,7 +25,17 @@ for(let i = 0; i < text.length; i++){
   },
 
   //Función descifra un texto 
-  decode: () => {
-    /* Acá va tu código */
-  }
+  decode: (num, text) => {
+    let result='';
+    let asciiText='';
+for(let i = 0; i < text.length; i++){
+  asciiText = text.charCodeAt(i);
+      // cifrado con mayúscula.
+  if(asciiText >= 65 && asciiText <= 90){
+     asciiText = String.fromCharCode((asciiText + 65 - (parseInt(num))) % 26 + 65);
+      }
+      result += asciiText
+    }  
+    return result;
+  },
 };

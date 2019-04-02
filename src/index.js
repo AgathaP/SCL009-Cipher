@@ -8,9 +8,16 @@ document.getElementById('see').addEventListener('click', () => {
     document.getElementById('yourPass').innerHTML = `${vewPass}`;
 })
 
-document.getElementById('btnConvert').addEventListener('click', () => {
-    let numUser = document.getElementById('offset').value;
-    let textUser = document.getElementById('userText').value;
-    let resultEncode = cipher.encode(numUser, textUser);
+document.getElementById('btnEncode').addEventListener('click', () => {
+    let numEnc = document.getElementById('offset').value;
+    let textEnc = document.getElementById('userText').value;
+    let resultEncode = window.cipher.encode(numEnc, textEnc);
         document.getElementById('result').innerHTML = `${resultEncode}`;
+})
+
+document.getElementById('btnDecode').addEventListener('click', () => {
+    let numDec = document.getElementById('offset').value;
+    let textDec = document.getElementById('userText').value;
+    let resultDecode = window.cipher.decode(numDec, textDec);
+        document.getElementById('result').innerHTML = `${resultDecode}`;
 })
