@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+  <header>
+    <img src="" alt="Logo de la página">
+    <h1> <!-- Nombre de la página --> </h1>
+    <h4> <!-- slogan de la página --> </h4>
+  </header>
+
   <body>
     <container id="screen">
       <section id="cipherScreen">
@@ -15,17 +21,17 @@
           <input type="number" name="offset" min="1" max="99" placeholder="N°" id="offset">
         </form>
       
-          <input type="password" name="usertext" id="userText"> 
+          <input type="password" name="usertext" id="user_text"> 
           <button id="see">ver</button> <br> 
           <p id="yourPass"></p>
-          <button type="submit" name="convertir" id="btnEncode">codificar</button>
-          <button type="submit" name="convertir" id="btnDecode">decodificar</button>
+          <button type="submit" name="convertir" id="btn_encode">codificar</button>
+          <button type="submit" name="convertir" id="btn_decode">decodificar</button>
         <div id="result"></div>
       </section>    
     </container>
 
     <footer>
-        by NezuProyect
+        by NezuProyect | <!-- nombre de la página y su icono de marca registrada -->
     </footer>
   
     <script src="cipher.js"></script>
