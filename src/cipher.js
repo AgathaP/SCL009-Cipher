@@ -9,12 +9,16 @@ for(let i = 0; i < text.length; i++){
   asciiText = text.charCodeAt(i);
       // cifrado con mayúscula.
   if(asciiText >= 65 && asciiText <= 90){
-     asciiText = String.fromCharCode((asciiText - 65 + (parseInt(num))) % 26 + 65);
+      asciiText = String.fromCharCode((asciiText - 65 + (parseInt(num))) % 26 + 65);
       }
       // Cifrado con minúsculas.
   if(asciiText >= 97 && asciiText <= 122) {
-     asciiText = String.fromCharCode((asciiText - 97 + (parseInt(num))) % 26 + 97);
+      asciiText = String.fromCharCode((asciiText - 97 + (parseInt(num))) % 26 + 97);
       }
+    // Cifrado con números.
+  if(asciiText >= 48 && asciiText <= 57) {
+      asciiText = String.fromCharCode((parseInt(asciiText) - 48 + (parseInt(num))) % 26 + 48);
+    }
       result += asciiText
     }  
     return result;
