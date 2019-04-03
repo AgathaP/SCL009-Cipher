@@ -1,3 +1,31 @@
+/* Estilo general de HTML*/
+
+body{
+    text-align: center;
+}
+
+/* Pantalla del cifrado */
+
+#offset {
+    margin: 0% 20% 4% 20%;
+    border-color: green;
+}
+
+#usertext {
+    border-color: green;
+    border-style: dotted;
+    height: 25px;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 0%;
+}
+
+#btnconvert {
+    border-radius: 25%;
+    background-color:rosybrown;
+    font-weight: bold;
+}
+
 footer {
     margin-top: 80%;
 }
