@@ -85,13 +85,11 @@ window.onload
          <span class="dot" onclick="showImage(2);"></span>
        </div>
    <!-- cierre del carousel -->
-     </section>
-   <button id="go_cipher">ir al cifrado</button>
  </section>
  `;
 
 document.documentElement.scrollTop=0;
-// })
+
 
 //Evento que me lleva a la pantalla de cifrado.
 document.getElementById('go_cipher').addEventListener('click', () => {
@@ -140,16 +138,11 @@ document.getElementById('go_cipher').addEventListener('click', () => {
          document.documentElement.scrollTop=0; 
 }) 
      
-    //  //Evento que me lleva a pantalla "About".
-    //  document.getElementById('').addEventListener('click', () => {
-    //      document.getElementById('screen').innerHTML = 
-    //      `
-    //      <h1>About</h1>
-    //      <p></p>
-    //      `
-    //  })
-
-
-
-
+     //Evento que me lleva a pantalla "About".
+document.getElementById('go_home').addEventListener('click', () => {
+    document.getElementById('screen').innerHTML = 
+      `
+      ${home}
+      `;
+})
 
