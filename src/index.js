@@ -138,7 +138,7 @@ document.getElementById('go_cipher').addEventListener('click', () => {
          document.documentElement.scrollTop=0; 
 }) 
      
-     //Evento que me lleva a pantalla "About".
+     //Eventos que me llevan a pantalla principal "Home".
 document.getElementById('go_home').addEventListener('click', () => {
     document.getElementById('screen').innerHTML = 
       `
@@ -146,3 +146,19 @@ document.getElementById('go_home').addEventListener('click', () => {
       `;
 })
 
+document.getElementById('logo').addEventListener('click', () => {
+  document.getElementById('screen').innerHTML = 
+`
+${home}
+`;
+})
+
+    // Evento que me lleva a pantalla about.
+document.getElementById('go_about').addEventListener('click', () =>{
+  document.getElementById('screen').innerHTML = 
+  `
+  <h1>About</h1>
+  <p></p>
+  `
+  document.documentElement.scrollTop=0; 
+})
