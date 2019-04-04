@@ -32,28 +32,69 @@ function next() {
     if(current > 2){
         current = 0;
     }
-    showImage(current);
+    return showImage(current);
 }
-
+// ONLOAD
 function previous() {
     current--;
     if(current < 0){
         current = 2;
     }
-    showImage(current);
+    return showImage(current);
 }
 
 // velocidad de intervalos
 let speed = 2000;
 let play = setInterval('next()', speed);
-//cierre del carrusel.
+// cierre del carrusel.
 
 //Al HOME
-document.getElementById('home').addEventListener('click', () => {
-    document.getElementById('screen').innerHTML =``;
-})
+window.onload
+
+// document.getElementsByClassName('go_home').addEventListener('click', () => {
+    let home = document.getElementById('screen').innerHTML = 
+    ` 
+    <!-- CARRUSEL -->
+    <section class="carousel">
+       <div class="image current">
+         <img src="img/cuentas.jpg" alt="persona con varias cuentas"/>
+         <button type="submit" class="btnlink">ññññ</button>
+         <div class="text">probando probando 10-4</div>  
+       </div>
+
+       <div class="image">
+         <img src="img/contraseña-segura.jpg" alt="contraseña"/>
+         <button type="submit" class="btnlink">cifra aquí</button>
+         <div class="text">probando probando 10-4</div>    
+       </div>
+
+       <div class="image">
+         <img src="img/El-gatoto.png" alt="app Cipher Chat"/>
+         <button type="submit" class="btnlink">Ir a Cipher Chat</button>
+         <div class="text">También puedes probar con Cipher Chat.<br> 
+           una divertida web de mensajería cifrada</div>  
+       </div>
+
+   <!-- flechas -->
+       <a href="#" class="previous" onclick="previous();">&#10094;</a>
+       <a href="#" class="next" onclick="next();">&#10095;</a>
+
+       <div class="dots">
+         <span class="dot active" onclick="showImage(0);"></span>
+         <span class="dot" onclick="showImage(1);"></span>
+         <span class="dot" onclick="showImage(2);"></span>
+       </div>
+   <!-- cierre del carousel -->
+     </section>
+   <button id="go_cipher">ir al cifrado</button>
+ </section>
+ `;
+
+document.documentElement.scrollTop=0;
+// })
+
 //Evento que me lleva a la pantalla de cifrado.
-document.getElementById('change_screen_cipher').addEventListener('click', () => {
+document.getElementById('go_cipher').addEventListener('click', () => {
         document.getElementById('screen').innerHTML =
         
     `      
@@ -95,13 +136,18 @@ document.getElementById('change_screen_cipher').addEventListener('click', () => 
              let textDec = document.getElementById('user_text').value;
              let resultDecode = window.cipher.decode(numDec, textDec);
                  document.getElementById('result').innerHTML = `${resultDecode}`;
-         })    
+         })   
+         document.documentElement.scrollTop=0; 
 }) 
      
-     //Evento que me lleva a pantalla "About".
-     document.getElementById('').addEventListener('click', () => {
-         document.getElementById('screen').innerHTML = ``
-     })
+    //  //Evento que me lleva a pantalla "About".
+    //  document.getElementById('').addEventListener('click', () => {
+    //      document.getElementById('screen').innerHTML = 
+    //      `
+    //      <h1>About</h1>
+    //      <p></p>
+    //      `
+    //  })
 
 
 
