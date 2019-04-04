@@ -1,3 +1,52 @@
+// CARRUSEL
+// posición actual reprsentada por los circulos
+let currentImage = 0;
+function showDot(n) {
+    let btn = document.getElementsByClassName('dot');
+    for(let i=0; i<btn.length; i++){
+        if (btn[i].className.includes('active')){
+            btn[i].className = btn[i].className.replace('active', '');
+            break;
+        }
+    }
+    btn[n].className += ' active';
+}
+function showImage(n) {
+    // nos devuelve un array con los elementos que contengan el class images.
+    let images = document.getElementsByClassName('image');
+    // iteramos la clase
+    for(let i=0; i<images.length; i++){
+        if (images[i].className.includes('current')) {
+            images[i].className = images[i].className.replace('current', '');
+            break;
+        }
+    }
+    current = n;
+    images[n].className += ' current';
+    showDot(n);
+}
+
+// permite que llegando a la úlima imagen vuelva a mostrarl la primera.
+function next() {
+    current++;
+    if(current > 2){
+        current = 0;
+    }
+    showImage(current);
+}
+
+function previous() {
+    current--;
+    if(current < 0){
+        current = 2;
+    }
+    showImage(current);
+}
+
+// velocidad de intervalos
+let speed = 2000;
+let play = setInterval('next()', speed);
+//cierre del carrusel.
 
 //Al HOME
 document.getElementById('home').addEventListener('click', () => {

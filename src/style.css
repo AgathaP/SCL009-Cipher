@@ -1,12 +1,134 @@
-/* Estilo general de HTML*/
+/* ESTILOGENERAL DE HTML*/
+
+/* HEADER */
+/* BARRA DE NAVEGACIÓN */
+.logo{
+    text-align: left;
+}
+.nav_bar{
+    background-color: darkslateblue;
+}
+.navbar ul{
+    list-style-type: none;
+    text-align: left;
+ }
+
+.navbar li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+ } 
+
+.navbar li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+ }
+ .navbar li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ }
 
 body{
     text-align: center;
 }
+/* PANTALLA DE INICIO */
+/* carousel */
+.carousel {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    border-radius: 15px;
+    margin: 1% 0% 80% 20%;
+}
 
-/* Pantalla del cifrado */
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
 
-#offset {
+.image img {
+    position: relative;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    top:65%;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btnlink {
+    position: absolute;
+    /* text-align: center; */
+    top:50%;
+    color: black;
+    font-weight: bold;
+    
+}
+.carousel a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next {
+    left: 97%;
+}
+
+.dots {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+display: inline-block;
+width: 16px;
+height: 16px;
+background-color: white;
+border-radius: 50%;
+margin-right: 5px;
+}
+
+/* cuando el cursor pasa por encima */
+.dot:hover {
+cursor: pointer;
+background-color: gray;
+}
+
+.carousel a:hover{
+    color: gray;
+}
+/* imagen que se está mostrando en ese momento */
+.current {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+}
+/* circulo que indica posición de la imagen que se está mostrando en ese momento */
+.active {
+    background-color: gray;
+}
+/* PANTALLA DE CIFRADO */
+
+/* #offset {
     margin: 0% 20% 4% 20%;
     border-color: green;
 }
@@ -24,7 +146,7 @@ body{
     border-radius: 25%;
     background-color:rosybrown;
     font-weight: bold;
-}
+} */
 
 footer {
     margin-top: 80%;

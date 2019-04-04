@@ -9,20 +9,65 @@
   </head>
   <body>
 
-      <header>
-        
-        <a href="" id ="home">
-          <img type="button" id ="home" src="img/asterisco.jpg" alt="Logo de la página">
-        </a>
+    <header>
         <h1> <!-- Nombre de la página --> </h1>
         <h4> <!-- slogan de la página --> </h4>
-        <!-- Barra de navegación -->
 
-      </header>
+        <!-- BARRA DE NAVEGACIÓN -->
+      <nav class="nav_bar">
+          <a href="#" class="logo">
+              <img type="button" id ="home" src="img/asterisco.jpg" alt="Logo de la página">
+            </a>
+          <div class="navbar">
 
+            <!-- <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>-->  
+            
+          <ul class="right"> <!--"hide-on-med-and-down" -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cifrado</a></li>
+          </ul> 
+        </div> 
+      </nav> 
+    </header>
+
+    <!-- PANTALLA -->
     <container id="screen">
 
-     <!-- Carrusel -->
+     <!-- CARRUSEL -->
+     <section class="carousel">
+        <div class="image current">
+          <img src="img/cuentas.jpg" alt="persona con varias cuentas"/>
+          <button type="submit" class="btnlink">ññññ</button>
+          <div class="text">probando probando 10-4</div>  
+        </div>
+
+        <div class="image">
+          <img src="img/contraseña-segura.jpg" alt="contraseña"/>
+          <button type="submit" class="btnlink">cifra aquí</button>
+          <div class="text">probando probando 10-4</div>    
+        </div>
+
+        <div class="image">
+          <img src="img/El-gatoto.png" alt="app Cipher Chat"/>
+          <button type="submit" class="btnlink">Ir a Cipher Chat</button>
+          <div class="text">También puedes probar con Cipher Chat.<br> 
+            una divertida web de mensajería cifrada</div>  
+        </div>
+
+    <!-- flechas -->
+        <a href="#" class="previous" onclick="previous();">&#10094;</a>
+        <a href="#" class="next" onclick="next();">&#10095;</a>
+
+        <div class="dots">
+          <span class="dot active" onclick="showImage(0);"></span>
+          <span class="dot" onclick="showImage(1);"></span>
+          <span class="dot" onclick="showImage(2);"></span>
+        </div>
+    <!-- cierre del carousel -->
+      </section>
     <button id="change_screen_cipher">ir al cifrado</button>
     </container>
 
