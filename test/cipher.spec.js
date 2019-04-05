@@ -18,7 +18,9 @@ describe('cipher', () => {
       assert.equal(window.cipher.encode (7, "abcdef"), "hijklm");
     });
 
-    it('debería retornar "" para "" con un offset de 3')
+    it('debería retornar "4567890123" para "1234567890" con un offset de 3', () => {
+      assert.equal(window.cipher.encode (3, "1234567890"), "4567890123");
+    });
   });
 
   describe('cipher.decode', () => {
@@ -28,7 +30,12 @@ describe('cipher', () => {
     });
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-    assert.equal(window.cipher.decode (33, 'HIJKLMNOPQRSTUVWXYZABCDEFG'), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+      assert.equal(window.cipher.decode (33, 'HIJKLMNOPQRSTUVWXYZABCDEFG'), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
+
+    it('debería retornar "lmnopqr" para "abcdefg" con un offset de 15', () => {
+      assert.equal(window.cipher.decode (15, 'abcdefg'), 'lmnopqr');
+    });
+
   });
 });

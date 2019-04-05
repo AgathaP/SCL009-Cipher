@@ -17,7 +17,7 @@ for(let i = 0; i < text.length; i++){
       }
     // Cifrado con números.
   if(asciiText >= 48 && asciiText <= 57) {
-      asciiText = String.fromCharCode((parseInt(asciiText) - 48 + (parseInt(num))) % 10 + 48);
+      asciiText = String.fromCharCode((asciiText - 48 + (parseInt(num))) % 10 + 48);
     }
       result += asciiText
     }  
@@ -36,7 +36,7 @@ for(let i = 0; i < text.length; i++){
       }
       // Descifrado con minúsculas.
   if(asciiText >= 97 && asciiText <= 122) {
-    asciiText = String.fromCharCode((asciiText + 97 - (parseInt(num))) % 26 + 97);
+    asciiText = String.fromCharCode((asciiText - 122 - (parseInt(num))) % 26 + 122);
      }
       result += asciiText
     }  
