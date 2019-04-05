@@ -70,7 +70,9 @@ window.onload
 
        <div class="image">
          <img src="img/El-gatoto.png" alt="app Cipher Chat"/>
-         <button type="submit" class="btnlink">Ir a Cipher Chat</button>
+         <form method="LINK" action="https://agathap.github.io/SCL008-Cipher/src/">
+          <button type="submit" class="btnlink">Ir a Cipher Chat</button>
+         </form>
          <div class="text">También puedes probar con Cipher Chat.<br> 
            una divertida web de mensajería cifrada</div>  
        </div>
