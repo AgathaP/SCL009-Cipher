@@ -1,16 +1,18 @@
-// // CARRUSEL
-// // posición actual reprsentada por los circulos
+// CARRUSEL
+// posición actual reprsentada por los circulos
 // let currentImage = 0;
+// function carousel () {
 // function showDot(n) {
 //     let btn = document.getElementsByClassName('dot');
 //     for(let i=0; i<btn.length; i++){
 //         if (btn[i].className.includes('active')){
 //             btn[i].className = btn[i].className.replace('active', '');
 //             break;
-//         }
-//     }
+//         };
+//     };
 //     btn[n].className += ' active';
-// }
+// };
+// let current;
 // function showImage(n) {
 //     // nos devuelve un array con los elementos que contengan el class images.
 //     let images = document.getElementsByClassName('image');
@@ -19,34 +21,37 @@
 //         if (images[i].className.includes('current')) {
 //             images[i].className = images[i].className.replace('current', '');
 //             break;
-//         }
-//     }
+//         };
+//     };
+  
 //     current = n;
 //     images[n].className += ' current';
 //     showDot(n);
-// }
+// };
 
 // // permite que llegando a la úlima imagen vuelva a mostrarl la primera.
 // function next() {
 //     current++;
 //     if(current > 2){
 //         current = 0;
-//     }
+//     };
 //     return showImage(current);
-// }
+// };
 // // ONLOAD
 // function previous() {
+//   let current;
 //     current--;
 //     if(current < 0){
 //         current = 2;
-//     }
+//     };
 //     return showImage(current);
-// }
+// };
 
 // // velocidad de intervalos
 // let speed = 2000;
 // let play = setInterval('next()', speed);
 // // cierre del carrusel.
+// };
 let errorNumb = 'Tienes que ingresar un número de desplazamiento';
 let errorText = 'Tienes que ingresar un texto';
 //Al HOME

@@ -36,8 +36,12 @@ for(let i = 0; i < text.length; i++){
       }
       // Descifrado con minúsculas.
   if(asciiText >= 97 && asciiText <= 122) {
-    asciiText = String.fromCharCode((asciiText - 122 - (parseInt(num))) % 26 + 122);
-     }
+     asciiText = String.fromCharCode((asciiText - 122 - (parseInt(num))) % 26 + 122);
+      } 
+     // Descifrado con números.
+  if(asciiText >= 48 && asciiText <= 57) {
+    asciiText = String.fromCharCode((asciiText - 57 - (parseInt(num))) % 10 + 57);
+      } 
       result += asciiText
     }  
     return result;

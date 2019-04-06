@@ -37,5 +37,8 @@ describe('cipher', () => {
       assert.equal(window.cipher.decode (15, 'abcdefg'), 'lmnopqr');
     });
 
+    it('debería retornar "901234567890" para "123456789012" con un offset de 22', () => {
+      assert.equal(window.cipher.decode (22, '123456789012'), '901234567890');
+    });
   });
 });
