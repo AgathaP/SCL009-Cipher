@@ -37,7 +37,7 @@ A continuación se muestra el proceso que se llevó a cabo para la creación de 
 
 Teniendo cómo única idea clara la creación de una interfaz capáz de cifrar y descifrar un texto, realicé una encuesta que me permitiera saber cual es la necesidad real de los usuarios frente a una página de estas características. De esta forma, dando prioridad a los resultados, opté por la creación de una aplicación que fuese capáz de cifrar y descifrar contraseñas.
 
-![Encuesta-definir-uso-app](img/encuesta-uso-app.jpg)
+![Encuesta-definir-uso-app](/img/encuesta-uso-app.jpg)
 
 ## Control de flujo
 La imagen representa en detalle las interacciones entre usuario e interfaz.
