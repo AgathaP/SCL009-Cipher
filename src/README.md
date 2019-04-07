@@ -37,14 +37,20 @@ A continuación se muestra el proceso que se llevó a cabo para la creación de 
 
 Teniendo cómo única idea clara la creación de una interfaz capáz de cifrar y descifrar un texto, realicé una encuesta que me permitiera saber cual es la necesidad real de los usuarios frente a una página de estas características. De esta forma, dando prioridad a los resultados, opté por la creación de una aplicación que fuese capáz de cifrar y descifrar contraseñas.
 
-![Encuesta-definir-uso-app](/img/encuesta-uso-app.jpg)
+### **¿Con qué fin usarían una aplicación que cifre un texto?**
+
+![Encuesta que define el uso de la app](/img/encuesta-uso-app.png)
+
+### **Sí marcaste la opción "otra" en la pregunta anterior, ¿cuál sería la utilidad que le darías a una app de cifrado?**
+![Otro uso de una app de cifrado](/img/otro-uso.png)
 
 ## Control de flujo
 La imagen representa en detalle las interacciones entre usuario e interfaz.
 
-Alt="imagen control de flujo"
+![control de flujo](/img/control-de-flujo.png)
 
 ## Sketch (prototipo de baja fidelidad)
 Estas son las distintas pantallas dentro de ****.
+Después de relizar algunos testeos, se resolvió omitir el nombre, darle funcionalidad al logo, para que hiciera conección con la página principal y eliminar las instrucciones de la página antes mencionada.
 
-Alt="imagenes de los sketch"
+![Pantalla del home](/img/sketch.png)

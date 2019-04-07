@@ -1,57 +1,57 @@
 // CARRUSEL
 // posición actual reprsentada por los circulos
-// let currentImage = 0;
-// function carousel () {
-// function showDot(n) {
-//     let btn = document.getElementsByClassName('dot');
-//     for(let i=0; i<btn.length; i++){
-//         if (btn[i].className.includes('active')){
-//             btn[i].className = btn[i].className.replace('active', '');
-//             break;
-//         };
-//     };
-//     btn[n].className += ' active';
-// };
-// let current;
-// function showImage(n) {
-//     // nos devuelve un array con los elementos que contengan el class images.
-//     let images = document.getElementsByClassName('image');
-//     // iteramos la clase
-//     for(let i=0; i<images.length; i++){
-//         if (images[i].className.includes('current')) {
-//             images[i].className = images[i].className.replace('current', '');
-//             break;
-//         };
-//     };
+let currentImage = 0;
+function carousel () {
+function showDot(n) {
+    let btn = document.getElementsByClassName('dot');
+    for(let i=0; i<btn.length; i++){
+        if (btn[i].className.includes('active')){
+            btn[i].className = btn[i].className.replace('active', '');
+            break;
+        };
+    };
+    btn[n].className += ' active';
+};
+let current;
+function showImage(n) {
+    // nos devuelve un array con los elementos que contengan el class images.
+    let images = document.getElementsByClassName('image');
+    // iteramos la clase
+    for(let i=0; i<images.length; i++){
+        if (images[i].className.includes('current')) {
+            images[i].className = images[i].className.replace('current', '');
+            break;
+        };
+    };
   
-//     current = n;
-//     images[n].className += ' current';
-//     showDot(n);
-// };
+    current = n;
+    images[n].className += ' current';
+    showDot(n);
+};
 
-// // permite que llegando a la úlima imagen vuelva a mostrarl la primera.
-// function next() {
-//     current++;
-//     if(current > 2){
-//         current = 0;
-//     };
-//     return showImage(current);
-// };
-// // ONLOAD
-// function previous() {
-//   let current;
-//     current--;
-//     if(current < 0){
-//         current = 2;
-//     };
-//     return showImage(current);
-// };
+// permite que llegando a la úlima imagen vuelva a mostrarl la primera.
+function next() {
+    current++;
+    if(current > 2){
+        current = 0;
+    };
+    return showImage(current);
+};
+// ONLOAD
+function previous() {
+  let current;
+    current--;
+    if(current < 0){
+        current = 2;
+    };
+    return showImage(current);
+};
 
-// // velocidad de intervalos
-// let speed = 2000;
-// let play = setInterval('next()', speed);
-// // cierre del carrusel.
-// };
+// velocidad de intervalos
+let speed = 2000;
+let play = setInterval('next()', speed);
+// cierre del carrusel.
+};
 let errorNumb = 'Tienes que ingresar un número de desplazamiento';
 let errorText = 'Tienes que ingresar un texto';
 //Al HOME
@@ -98,14 +98,23 @@ window.onload
 
 document.documentElement.scrollTop=0;
 
-
+  // trying to make a modal
 //Evento que me lleva a la pantalla de cifrado.
 document.getElementById('go_modal').addEventListener('click', () => {
-      document.getElementById('')
-      // trying to make a modal
-}) 
+      document.getElementById('my_modal').style.display = 'block';
+    })
 
-document.getElementById('go_modal').addEventListener('click', () => {
+    // cerrando el modal.
+document.getElementById('close').addEventListener('click', () => {
+      document.getElementById('my_modal').style.display = 'none';
+    })
+
+document.getElementById('my_modal').addEventListener('click', () => {
+  document.getElementById('my_modal').style.display = 'none';
+})
+
+  // Evento que me lleva a la pantalla de cifrado.
+document.getElementById('go_cipher').addEventListener('click', () => {
         document.getElementById('screen').innerHTML =
         
     `      
