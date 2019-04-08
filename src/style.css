@@ -5,9 +5,10 @@ body{
 
     header{
         background-color: #512da8;
+        text-align: left;
+        height: ;
     }
     #logo{
-        text-align: left;
         scroll-margin-top: 0%;
         outline-style: none;
     }
@@ -31,7 +32,7 @@ body{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+
     /* Contenido del Modal */
     .modal-content {
         background-color: #fefefe;
@@ -60,6 +61,7 @@ body{
 /* BARRA DE NAVEGACIÓN */
 .nav_bar{
     background-color: #8559da;
+
 }
 .navbar ul{
     list-style-type: none;
@@ -191,6 +193,10 @@ background-color: gray;
     color: red;
 }
 
+::placeholder{
+    color: #8d8d8d;
+}
+
 #offset{
     top: 0%;
     left: 0%;
@@ -233,3 +239,8 @@ button:hover{
     background-color: #cacc5d;
 }
 
+/* Pantalla de About */
+.about_us{
+    text-align: left;
+    margin: 1% 1% 2% 3%;
+}

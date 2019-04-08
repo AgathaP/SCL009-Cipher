@@ -64,4 +64,5 @@ Para un optimo avance del proyecto, utilicé [Trello](https://trello.com/b/CQygo
 * Un archivo en HTML5 le dió la estructura a la interfaz.
 * En un archivo CSS se aloja toda la parte de diseño.
 * Un archivo JS unicamente para la lógica y en un archivo JS a parte todo lo que es manejo del DOM.
+* Se uso vanilla Javascript.
 * También se usó, aunque en menor medida, el framework *Materialize*

@@ -119,21 +119,30 @@ document.getElementById('my_modal').addEventListener('click', () => {
 document.getElementById('go_cipher').addEventListener('click', () => {
         document.getElementById('screen').innerHTML =
         
-    `      
-      <h1>ingresa tu número</h1>
-      <p id="error_messege"></p>
+    `
+  <div class="row">      
+      <h1 class="col s12 m12 l12 xl12">ingresa tu número</h1>
+      <p id="error_messege" class="col s12 m12 l12 xl12"></p>
     <form>
-      <input type="number" min="1" max="99" placeholder="N°" id="offset">
+      <p class="tittle_input" class="col s12 offset-m3 m3 offset-l3 l3 offset-xl3 xl3"> elige un número de desplazamiento
+        <input type="number" min="1" max="99" placeholder="N°" id="offset" class="s12 m6 l6 xl6">
+      </p>
     </form>
-      <p class="max_characters">18 carácteres máximo
-      <input type="password" maxlength="18" id="user_text"> 
+  </div>
+  <div class="row">
+      <p class="tittle_input" class="col s6 offset-m3 m3 offset-l3 l3 offset-xl3 xl3"> 18 carácteres máximo
+      <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text"> 
       <button id="see">ver</button></p>
     <div id="your_pass"></div>
-      <button type="submit" class="convert" id="btn_encode">codificar</button>
+  </div>
+  <div class="row">
+      <button type="submit" class="convert" id="btn_encode" class="col ">codificar</button>
       <button type="submit" class="convert" id="btn_decode">decodificar</button>
     <div id="result"></div>
 
     <button id="delete">Borrar</button>
+  </div>
+  
     `
 let errorNumb = 'Tienes que ingresar un número de desplazamiento';
 let errorText = 'Tienes que ingresar un texto';
@@ -214,26 +223,28 @@ ${home}
 document.getElementById('go_about').addEventListener('click', () =>{
   document.getElementById('screen').innerHTML = 
   `
-  <h1>About</h1>
-  <p>
-    En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales 
-    preocupaciones es no olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos 
-    citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas 
-    de instituciones bancarias. Son demasiadas las contraseñas que debemos manejar a diario, y es además, 
-    poco seguro ponerle una misma contraseña a todas nuestras cuentas. Por lo que esta aplicación está 
-    pensada en hacer que una misma contraseña sirva para todas nuestras cuentas de manera segura.
-  </p>
+  <div class="about_us">
+    <h1>About</h1>
+    <p>
+      En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales 
+      preocupaciones es no olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos 
+      citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas 
+      de instituciones bancarias. Son demasiadas las contraseñas que debemos manejar a diario, y es además, 
+      poco seguro ponerle una misma contraseña a todas nuestras cuentas. Por lo que esta aplicación está 
+      pensada en hacer que una misma contraseña sirva para todas nuestras cuentas de manera segura.
+    </p>
 
-  <p>
-    Como ya sabemos, menejar una misma clave para todas nuestras cuentas en la red, es inseguro, sin embargo, 
-    hoy en día nos manejamos casi en su totalidad por medio de internet, por lo que recordar claves distintas
-    para todas nuestras cuentas en citios web, se torna complicado. Es por está razón que ***** ofrece 
-    simplicidad y seguridad. El usuario deberá recordar una unica clave, ya que lo unico que cambiará en sus 
-    contraseñas, entre una página y otra, será el número de desplazamiento que usó al momento de codificarla 
-    en nuestro citio. Incluso si recordar esto parece difícil, pensémos en que aunque anontacemos nuestro 
-    numero de desplazamiento en un papel, no necesitariamos anotar la contraseña, por lo que aún así nuestras 
-    cuentas estarían protegidas.
-  </p>
+    <p>
+      Como ya sabemos, menejar una misma clave para todas nuestras cuentas en la red, es inseguro, sin embargo, 
+      hoy en día nos manejamos casi en su totalidad por medio de internet, por lo que recordar claves distintas
+      para todas nuestras cuentas en citios web, se torna complicado. Es por está razón que ***** ofrece 
+      simplicidad y seguridad. El usuario deberá recordar una unica clave, ya que lo unico que cambiará en sus 
+      contraseñas, entre una página y otra, será el número de desplazamiento que usó al momento de codificarla 
+      en nuestro citio. Incluso si recordar esto parece difícil, pensémos en que aunque anontacemos nuestro 
+      numero de desplazamiento en un papel, no necesitariamos anotar la contraseña, por lo que aún así nuestras 
+      cuentas estarían protegidas.
+    </p>
+  </div>
   `
   document.documentElement.scrollTop=0; 
 })
