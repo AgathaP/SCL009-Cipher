@@ -11,25 +11,34 @@
 
     <!-- MODAL -->
 
-  <section>
+  <!-- <section> -->
       <!-- The Modal -->
     <div id="my_modal" class="modal">
 
         <!-- Modal content -->
       <div class="modal-content">
           <span id="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <p><strong>Antes de cifrar, recuerda poner un número de desplazamiento</strong></p>
+          <h4>Modo de uso:</h4>
+          <p>
+            Un "número de desplazamiento" es la cantidad de letras que se correrá el avecedario. 
+            de esta forma obtienes tu cifrado, basado en el"cifrado Cesar". Así de simple.
+            Puedes cifrar y descifrar letras mayúsuculas, letras minúsculas y números. <br>
+            Si no has escuchado antes sobre el cifrado Cesar puedes visitar este 
+            <a href="https://es.wikipedia.org/wiki/Cifrado_César" target="_blanck">link de wikipedia</a>. <br>
+            Puedes tener una misma clave para todas tus cuentas, con números de desplazamiento diferentes para cada una.
+          </p>
           <button id="go_cipher">Entendido</button>
       </div>
     </div>
-  </section>
+  <!-- </section> -->
 
 <!-- ENCABEZADO DE LA PÁGINA -->
     <header>
         <h1> <!-- Nombre de la página --> </h1>
         <h4> <!-- slogan de la página --> </h4>
         <!-- lanza un error el test porque un elemento img no deberia ser de tipe button :( -->
-        <img type="button" id="logo" src="img/asterisco.jpg" alt="Logo de la página">
+        <input type="image" id="logo" src="img/asterisco.jpg" alt="Logo de la página" />
         
         <!-- BARRA DE NAVEGACIÓN -->
       <nav class="nav_bar">
@@ -48,7 +57,7 @@
     </container>
 
     <footer>
-        by NezuProyect | <!-- nombre de la página y su icono de marca registrada -->
+       <h6><strong>by Nezu Proyect&reg;|</strong></h6> <!-- nombre de la página y su icono de marca registrada -->
     </footer>
   
     <script src="cipher.js"></script>

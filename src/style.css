@@ -1,6 +1,24 @@
 /* ESTILOGENERAL DE HTML*/
+body{
+    text-align: center;
+}
 
-/* The Modal (background) */
+    header{
+        background-color: #512da8;
+    }
+    #logo{
+        text-align: left;
+        scroll-margin-top: 0%;
+        outline-style: none;
+    }
+    footer {
+        margin-top: 10%;
+        text-align: center;
+        background-color: #8559da;
+        padding: 2px;
+    }
+
+/* Contenedor del Modal*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -14,39 +32,34 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-    /* Modal Content/Box */
+    /* Contenido del Modal */
     .modal-content {
         background-color: #fefefe;
         margin: 15% auto; /* 15% from the top and centered */
         padding: 20px;
         border: 1px solid #888;
         width: 80%; /* Could be more or less, depending on screen size */
-      }
+        }
 
-        /* The Close Button */
-  #close {
+    /* Botón para cerra el Modal */
+    #close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+    }
+
+    .close:hover,
+    .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+    }
 
 /* HEADER */
 /* BARRA DE NAVEGACIÓN */
-#logo{
-    text-align: left;
-    scroll-margin-top: 0%;
-}
 .nav_bar{
-    background-color: darkslateblue;
-   
+    background-color: #8559da;
 }
 .navbar ul{
     list-style-type: none;
@@ -60,23 +73,17 @@
  } 
 
 .button{
-    padding: 2px 7px 2px 7px;
-    color: #666;
-    background-color: #eeeeee;
-    border: 1px solid #ccc;
+    padding: 2px 7px;
+    color: black;
+    background-color: #8559da;
+    border: 1px solid #ffffbf;
     text-decoration: none;
+    border-radius: 0%;
  }
  .button:hover{
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #ffffbf;
+    color: #140078;
  }
-
-body{
-    text-align: center;
-}
-footer {
-    margin-top: 10%;
-}
 
 /* PANTALLA DE INICIO */
 /* carousel */
@@ -134,11 +141,11 @@ footer {
     transform: translateY(-50%);
 }
 
-.next {
+#next {
     left: 97%;
 }
 
-.previous{
+#previous{
     right: 97%;
 }
 
@@ -177,26 +184,52 @@ background-color: gray;
 .active {
     background-color: gray;
 }
+
 /* PANTALLA DE CIFRADO */
-
-/* #offset {
-    margin: 0% 20% 4% 20%;
-    border-color: green;
+#error_messege{
+    font-size: 15px;
+    color: red;
 }
 
-#usertext {
-    border-color: green;
-    border-style: dotted;
-    height: 25px;
+#offset{
+    top: 0%;
+    left: 0%;
+    height: 30px;
+    width: 40px;
+    font-size: 20px;
+    border: solid #140078;
+    margin-top: 6%;
+}
+
+#user_text{
+    top: 0%;
+    left: 0%;
+    height: 35px;
     width: 200px;
-    font-size: 16px;
-    margin-bottom: 0%;
+    font-size: 25px;
+    border: solid #140078;
+    margin-top: 1%;
+}
+#your_pass, #result{
+    font-size: 19px;
+    text-align: center;
+}
+.max_characters{
+    text-align: center;
+    font-size: 15px;
+    font: grey;
 }
 
-#btnconvert {
-    border-radius: 25%;
-    background-color:rosybrown;
-    font-weight: bold;
-} */
+.convert, #delete{
+margin: 2% 0%;
+}
 
+button{
+    background-color: #ffff8d;
+    padding: 4px 7px;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: #cacc5d;
+}
 

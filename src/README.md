@@ -11,12 +11,12 @@ Alt="imágen de la interfaz"
 	* Encuesta
 	* Control de flujo
 	* Sketch 
+* Organización
 * Qué vas a encontrar en la interfaz
-*
 
 # Definición del producto
 
-En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales preocupaciones es olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas de instituciones bancarias. Son demasiadas las contraseñas que debemos manejar a diario, y es además, poco seguro ponerle una misma contraseña a todas nuestras cuentas.
+En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales preocupaciones es no olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas de instituciones bancarias. Son demasiadas las contraseñas que debemos manejar a diario, y es además, poco seguro ponerle una misma contraseña a todas nuestras cuentas.
 Por lo que esta aplicación está pensada en hacer que una misma contraseña sirva para todas nuestras cuentas de manera segura.
 
 ## *Quiénes son nuestros usuarios*
@@ -41,8 +41,9 @@ Teniendo cómo única idea clara la creación de una interfaz capáz de cifrar y
 
 ![Encuesta que define el uso de la app](/img/encuesta-uso-app.png)
 
-### **Sí marcaste la opción "otra" en la pregunta anterior, ¿cuál sería la utilidad que le darías a una app de cifrado?**
-![Otro uso de una app de cifrado](/img/otro-uso.png)
+<br>
+
+![Otro uso de una app de cifrado](/img/otra-opcion-de-uso.png)
 
 ## Control de flujo
 La imagen representa en detalle las interacciones entre usuario e interfaz.
@@ -54,3 +55,13 @@ Estas son las distintas pantallas dentro de ****.
 Después de relizar algunos testeos, se resolvió omitir el nombre, darle funcionalidad al logo, para que hiciera conección con la página principal y eliminar las instrucciones de la página antes mencionada.
 
 ![Pantalla del home](/img/sketch.png)
+
+# Organización y metodología
+
+Para un optimo avance del proyecto, utilicé [Trello](https://trello.com/b/CQygonll/cipher-009)
+
+### **En el desarrollo del proyecto**
+* Un archivo en HTML5 le dió la estructura a la interfaz.
+* En un archivo CSS se aloja toda la parte de diseño.
+* Un archivo JS unicamente para la lógica y en un archivo JS a parte todo lo que es manejo del DOM.
+* También se usó, aunque en menor medida, el framework *Materialize*
