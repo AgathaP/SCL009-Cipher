@@ -35,20 +35,25 @@
 
 <!-- ENCABEZADO DE LA PÁGINA -->
     <header>
-        <h1> <!-- Nombre de la página --> </h1>
-        <h4> <!-- slogan de la página --> </h4>
-        <!-- lanza un error el test porque un elemento img no deberia ser de tipe button :( -->
         <input type="image" id="logo" src="img/asterisco.jpg" alt="Logo de la página" />
         
         <!-- BARRA DE NAVEGACIÓN -->
-      <nav class="nav_bar" class="row">
-            <ul class="right" class="col l12 xl12"> <!--"hide-on-med-and-down" -->
+      <nav class="nav_bar nav-wrapper" class="row">
+            <ul class="right" class="col m12 l12 xl12"> <!--"hide-on-med-and-down" -->
               <li><button class="button" id="go_home">Home</button></li>
               <li><button class="button" id="go_about">About</button></li>
               <!-- Botón que abre el Modal -->
               <li><button class="button" id="go_modal">Cifrado</button></li>
             </ul>
       </nav> 
+
+        <!--Barra de navegación responsivresponsiva-->
+          <div class="row"></div>    
+            <ul class="sidenav" id="side_nav" class="col s3">  
+              <li><a id="go_home" href="#">Inicio</a></li>      
+              <li><a id="go_about" href="#">about</a></li>
+              <li><a id="go_cipher" href="#">cifrado</a></li>
+            </ul>
     </header>
 
     <!-- PANTALLA -->

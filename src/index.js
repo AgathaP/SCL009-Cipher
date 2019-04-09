@@ -122,25 +122,32 @@ document.getElementById('go_cipher').addEventListener('click', () => {
     `
   <div class="row">      
       <h1 class="col s12 m12 l12 xl12">ingresa tu número</h1>
+  </div>
+  <div class="row">
       <p id="error_messege" class="col s12 m12 l12 xl12"></p>
+  </div>
+  <div class="row">
     <form>
-      <p class="tittle_input" class="col s12 offset-m3 m3 offset-l3 l3 offset-xl3 xl3"> elige un número de desplazamiento
+      <p class="tittle_input" class="col s12 m6 l6 xl6"> elige un número de desplazamiento
         <input type="number" min="1" max="99" placeholder="N°" id="offset" class="s12 m6 l6 xl6">
       </p>
     </form>
   </div>
   <div class="row">
-      <p class="tittle_input" class="col s6 offset-m3 m3 offset-l3 l3 offset-xl3 xl3"> 18 carácteres máximo
-      <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text"> 
-      <button id="see">ver</button></p>
-    <div id="your_pass"></div>
+      <p clape="pass="tittle_input" class="col s12 m4 l4 xl4"> 18 carácteres máximo</p>
+      <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text" class="col s12 m4 l4 xl4"> 
+      <button id="see" class="col s4 m4 l4 xl4">ver</button>
+  </div>
+  <div class="row"
+    <div id="your_pass" class="col s12 m12 l12 xl12"></div>
   </div>
   <div class="row">
-      <button type="submit" class="convert" id="btn_encode" class="col ">codificar</button>
-      <button type="submit" class="convert" id="btn_decode">decodificar</button>
-    <div id="result"></div>
-
-    <button id="delete">Borrar</button>
+      <button type="submit" class="convert" id="btn_encode" class="col s12 m6 l6 xl6">codificar</button>
+      <button type="submit" class="convert" id="btn_decode" class="col s12 m6 l6 xl6">decodificar</button>
+  </div>
+    <div id="result" class="col s12 m12 l12 xl12"></div>
+  <div class="row">
+    <button id="delete" class="col s12 m12 l12 xl12">Borrar</button>
   </div>
   
     `

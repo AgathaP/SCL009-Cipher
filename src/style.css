@@ -6,7 +6,7 @@ body{
     header{
         background-color: #512da8;
         text-align: left;
-        height: ;
+        height: 115px;
     }
     #logo{
         scroll-margin-top: 0%;
@@ -17,6 +17,7 @@ body{
         text-align: center;
         background-color: #8559da;
         padding: 2px;
+        margin-bottom: 0%;
     }
 
 /* Contenedor del Modal*/
@@ -61,7 +62,8 @@ body{
 /* BARRA DE NAVEGACIÓN */
 .nav_bar{
     background-color: #8559da;
-
+    height: 40px;
+    margin-top: 0% 
 }
 .navbar ul{
     list-style-type: none;
@@ -75,16 +77,21 @@ body{
  } 
 
 .button{
-    padding: 2px 7px;
+    height: 40px;
+    /* padding: 19px 27px; */
     color: black;
     background-color: #8559da;
     border: 1px solid #ffffbf;
     text-decoration: none;
+    font-size: 18px;
     border-radius: 0%;
  }
  .button:hover{
     background-color: #ffffbf;
     color: #140078;
+ }
+ .rigth{
+    margin-right: 5px;
  }
 
 /* PANTALLA DE INICIO */
@@ -204,7 +211,7 @@ background-color: gray;
     width: 40px;
     font-size: 20px;
     border: solid #140078;
-    margin-top: 6%;
+    /* margin-top: 6%; */
 }
 
 #user_text{
@@ -214,7 +221,7 @@ background-color: gray;
     width: 200px;
     font-size: 25px;
     border: solid #140078;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 #your_pass, #result{
     font-size: 19px;
@@ -226,8 +233,14 @@ background-color: gray;
     font: grey;
 }
 
-.convert, #delete{
+.convert{
 margin: 2% 0%;
+}
+#delete{
+    width: 150px;
+    height: 30px;
+    top: 0%;
+    margin-left: 42%;
 }
 
 button{
