@@ -136,9 +136,9 @@ document.getElementById('go_cipher').addEventListener('click', () => {
     </form>
   </div>
   <div class="row">
-      <p clape="pass="tittle_input" class="col s12 m4 l4 xl4"> 18 carácteres máximo</p>
-      <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text" class="col s12 m4 l4 xl4"> 
-      <button id="see" class="col s4 m4 l4 xl4">ver</button>
+      <p class="max_characters" class="col s12 m2 offset-m3 l2 offset-l3 xl2 offset-xl3"> 18 carácteres máximo</p>
+      <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text" class="col s12 m5 l5 xl5"> 
+      <button id="see" class="col s4 m2 l2 xl2">ver</button>
   </div>
   <div class="row"
     <div id="your_pass" class="col s12 m12 l12 xl12"></div>

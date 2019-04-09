@@ -24,26 +24,31 @@ body{
 
 /* Contenedor del Modal*/
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed;
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
   }
 
     /* Contenido del Modal */
-    .modal-content {
+    .modal_content {
         background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
+        margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
+        width: 80%;
+        text-align: center;
+        /* margin: 1% 0%; */
         }
+
+    .strong_text {
+        text-align: left;
+    }
 
     /* Botón para cerra el Modal */
     #close {
@@ -228,12 +233,13 @@ background-color: gray;
     width: 200px;
     font-size: 25px;
     border: solid #140078;
-    /* margin-top: 1%; */
 }
+
 #your_pass, #result{
     font-size: 19px;
     text-align: center;
 }
+
 .max_characters{
     text-align: center;
     font-size: 15px;
@@ -243,6 +249,7 @@ background-color: gray;
 .convert{
 margin: 2% 0%;
 }
+
 #delete{
     width: 150px;
     height: 30px;
@@ -255,6 +262,7 @@ button{
     padding: 4px 7px;
     border-radius: 4px;
 }
+
 #see:hover, button:hover{
     background-color: #cacc5d;
 }
@@ -264,11 +272,13 @@ button{
     height: 30px;
     margin: 1%;
 }
+
 /* Pantalla de About */
 .about_us{
     text-align: left;
     margin: 9% 1% 9% 6%;
 }
+
 .paragraph_about{
     width: 90%;
     margin-bottom: 6px;
