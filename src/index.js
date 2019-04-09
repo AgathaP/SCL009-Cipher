@@ -59,8 +59,9 @@ window.onload
 // document.getElementsByClassName('go_home').addEventListener('click', () => {
     let home = document.getElementById('screen').innerHTML = 
     ` 
+    <div class="row">
     <!-- CARRUSEL -->
-    <section class="carousel">
+    <section class="carousel" class="col s12 m12 l12 xl12">
        <div class="image current">
          <img src="img/cuentas.jpg" alt="persona con varias cuentas"/>
          <button type="submit" class="btnlink">ññññ</button>
@@ -93,6 +94,7 @@ window.onload
        </div>
    <!-- cierre del carousel -->
  </section>
+ </div>
  `;
 
 document.getElementById('next').addEventListener('click', () => {
@@ -230,9 +232,9 @@ ${home}
 document.getElementById('go_about').addEventListener('click', () =>{
   document.getElementById('screen').innerHTML = 
   `
-  <div class="about_us">
+  <div class="about_us" class="row">
     <h1>About</h1>
-    <p>
+    <p class="paragraph_about" class="col s12 m9 offset-m2 l9 offset-l2 xl9 offset-xl2">
       En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales 
       preocupaciones es no olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos 
       citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas 
@@ -240,8 +242,8 @@ document.getElementById('go_about').addEventListener('click', () =>{
       poco seguro ponerle una misma contraseña a todas nuestras cuentas. Por lo que esta aplicación está 
       pensada en hacer que una misma contraseña sirva para todas nuestras cuentas de manera segura.
     </p>
-
-    <p>
+    
+    <p class="paragraph_about" class="col s12 m9 offset-m2 l9 offset-l2 xl9 offset-xl2">
       Como ya sabemos, menejar una misma clave para todas nuestras cuentas en la red, es inseguro, sin embargo, 
       hoy en día nos manejamos casi en su totalidad por medio de internet, por lo que recordar claves distintas
       para todas nuestras cuentas en citios web, se torna complicado. Es por está razón que ***** ofrece 
