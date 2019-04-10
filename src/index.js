@@ -83,43 +83,40 @@ window.onload
            una divertida web de mensajería cifrada</div>  
        </div>
 
-   <!-- flechas -->
-       <a href="#" id="previous" onclick="previous();">&#10094;</a>
-       <a href="#" id="next" onclick="next();">&#10095;</a>
+      <!-- flechas -->
+          <a href="#" id="previous" onclick="previous();">&#10094;</a>
+          <a href="#" id="next" onclick="next();">&#10095;</a>
 
-       <div class="dots">
-         <span class="dot active" onclick="showImage(0);"></span>
-         <span class="dot" onclick="showImage(1);"></span>
-         <span class="dot" onclick="showImage(2);"></span>
-       </div>
-   <!-- cierre del carousel -->
- </section>
- </div>
- `;
+          <div class="dots">
+            <span class="dot active" onclick="showImage(0);"></span>
+            <span class="dot" onclick="showImage(1);"></span>
+            <span class="dot" onclick="showImage(2);"></span>
+          </div>
+      <!-- cierre del carousel -->
+    </section>
+    </div>
+    `;
 
-document.getElementById('next').addEventListener('click', () => {
-  
-})
 document.documentElement.scrollTop=0;
 
   // trying to make a modal
 //Evento que me lleva a la pantalla de cifrado.
 document.getElementById('go_modal').addEventListener('click', () => {
       document.getElementById('my_modal').style.display = 'block';
-    })
+    });
 
     // cerrando el modal.
 document.getElementById('close').addEventListener('click', () => {
       document.getElementById('my_modal').style.display = 'none';
-    })
+    });
 
 document.getElementById('my_modal').addEventListener('click', () => {
   document.getElementById('my_modal').style.display = 'none';
-})
+});
 
   // Evento que me lleva a la pantalla de cifrado.
 document.getElementById('go_cipher').addEventListener('click', () => {
-        document.getElementById('screen').innerHTML =
+  document.getElementById('screen').innerHTML =
         
     `
   <div class="row">      
@@ -151,82 +148,80 @@ document.getElementById('go_cipher').addEventListener('click', () => {
   <div class="row">
     <button id="delete" class="col s12 m12 l12 xl12">Borrar</button>
   </div>
-  
-    `
+  `;
 let errorNumb = 'Tienes que ingresar un número de desplazamiento';
 let errorText = 'Tienes que ingresar un texto';
 let empty = '';
      
      /* Llamamos un evento para que el botón ver nos imprima en la pantalla
           lo que se ingresa en el input type password*/
-          document.getElementById('see').addEventListener('click', () => {
-             let vewPass = document.getElementById('user_text').value;
-             document.getElementById('your_pass').innerHTML = `${vewPass}`;
-             if(vewPass === ''){
-              document.getElementById('error_messege').innerHTML = `${errorText}`;
-             }else{
-               document.getElementById('error_messege').innerHTML = `${empty}`;
-             }
-         });
+  document.getElementById('see').addEventListener('click', () => {
+      let vewPass = document.getElementById('user_text').value;
+      document.getElementById('your_pass').innerHTML = `${vewPass}`;
+      if(vewPass === ''){
+      document.getElementById('error_messege').innerHTML = `${errorText}`;
+      }else{
+        document.getElementById('error_messege').innerHTML = `${empty}`;
+      };
+  });
      
      /* Evento que imprime en la pantalla eltexto cifrado, 
           mediante el botón "btn_encode"*/
-          document.getElementById('btn_encode').addEventListener('click', () => {
-             let numEnc = document.getElementById('offset').value;
-             let textEnc = document.getElementById('user_text').value;
-             let resultEncode = window.cipher.encode(numEnc, textEnc);
-                 document.getElementById('result').innerHTML = `${resultEncode}`;
-                 //  Mensajes de error
-                 if(numEnc === ''){
-                  document.getElementById('error_messege').innerHTML = `${errorNumb}`;
-                } else if(textEnc === ''){
-                  document.getElementById('error_messege').innerHTML = `${errorText}`;
-                 }else{
-                   document.getElementById('error_messege').innerHTML =`${empty} `;
-                 }
-         })
+  document.getElementById('btn_encode').addEventListener('click', () => {
+    let numEnc = document.getElementById('offset').value;
+    let textEnc = document.getElementById('user_text').value;
+    let resultEncode = window.cipher.encode(numEnc, textEnc);
+      document.getElementById('result').innerHTML = `${resultEncode}`;
+      //  Mensajes de error
+      if(numEnc === ''){
+      document.getElementById('error_messege').innerHTML = `${errorNumb}`;
+      } else if(textEnc === ''){
+      document.getElementById('error_messege').innerHTML = `${errorText}`;
+      }else{
+        document.getElementById('error_messege').innerHTML =`${empty} `;
+      };
+  });
     
      /* Evento que imprime en la pantalla eltexto descifrado, 
           mediante el botón "btn_decode"*/
-          document.getElementById('btn_decode').addEventListener('click', () => {
-             let numDec = document.getElementById('offset').value;
-             let textDec = document.getElementById('user_text').value;
-             let resultDecode = window.cipher.decode(numDec, textDec);
-                 document.getElementById('result').innerHTML = `${resultDecode}`;
-                 if(numDec === ''){
-                  document.getElementById('error_messege').innerHTML = `${errorNumb}`;
-                 }
-                  else if(textDec === ''){
-                  document.getElementById('error_messege').innerHTML = `${errorText}`;
-                 } else {
-                  document.getElementById('error_messege').innerHTML = `${empty}`;
-                 }
-         })   
+  document.getElementById('btn_decode').addEventListener('click', () => {
+    let numDec = document.getElementById('offset').value;
+    let textDec = document.getElementById('user_text').value;
+    let resultDecode = window.cipher.decode(numDec, textDec);
+      document.getElementById('result').innerHTML = `${resultDecode}`;
+      if(numDec === ''){
+      document.getElementById('error_messege').innerHTML = `${errorNumb}`;
+      }else if(textDec === ''){
+      document.getElementById('error_messege').innerHTML = `${errorText}`;
+      } else {
+      document.getElementById('error_messege').innerHTML = `${empty}`;
+      };
+});   
 
-         document.getElementById('delete').addEventListener('click', () => {
-           document.getElementById('offset').value = `${empty}`;
-           document.getElementById('user_text').value = `${empty}`;
-           document.getElementById('your_pass').innerHTML = `${empty}`;
-           document.getElementById('result').innerHTML = `${empty}`;
-           document.getElementById('error_messege').innerHTML = `${empty}`;
-         })
-         document.documentElement.scrollTop=0; 
-})
+  document.getElementById('delete').addEventListener('click', () => {
+    document.getElementById('offset').value = `${empty}`;
+    document.getElementById('user_text').value = `${empty}`;
+    document.getElementById('your_pass').innerHTML = `${empty}`;
+    document.getElementById('result').innerHTML = `${empty}`;
+    document.getElementById('error_messege').innerHTML = `${empty}`;
+  });
+  document.documentElement.scrollTop=0; 
+});
 
      //Eventos que me llevan a pantalla principal "Home".
 document.getElementById('go_home').addEventListener('click', () => {
-    document.getElementById('screen').innerHTML = 
-      `
-      ${home}
-      `;
-})
+  document.getElementById('screen').innerHTML = 
+    `
+    ${home}
+    `;
+});
 
 document.getElementById('logo').addEventListener('click', () => {
   document.getElementById('screen').innerHTML = 
-`
-${home}
-`;
-})
+    `
+    ${home}
+    `;
+});
 
     // Evento que me lleva a pantalla about.
 document.getElementById('go_about').addEventListener('click', () =>{
@@ -256,4 +251,4 @@ document.getElementById('go_about').addEventListener('click', () =>{
   </div>
   `
   document.documentElement.scrollTop=0; 
-})
+});
