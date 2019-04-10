@@ -1,5 +1,4 @@
-# Nombre del producto
-
+# Llavero
 
 
 Alt="imágen de la interfaz"
@@ -108,3 +107,4 @@ Para un optimo avance del proyecto, utilicé [Trello](https://trello.com/b/CQygo
 # Futuras mejoras
 En una primera instancia la pantalla inicial estaba pensado poner un carrusel, que para efectos de los test fue descartado por ahora, pero que en un futuro estará funcional en la interfaz.
 Pensando en hacer una página más didactica, también me gustaría agregar algun video y/o imágen explicativa de cómo hacer uso correcto de ella.
+Además, como prioridad, está agregar la funcionalidad de codificar y decodificar otros caracteres.

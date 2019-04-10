@@ -59,43 +59,46 @@ window.onload
 // document.getElementsByClassName('go_home').addEventListener('click', () => {
     let home = document.getElementById('screen').innerHTML = 
     ` 
-    <div class="row">
-    <!-- CARRUSEL -->
-    <section class="carousel" class="col s12 m12 l12 xl12">
-       <div class="image current">
-         <img src="img/cuentas.jpg" alt="persona con varias cuentas"/>
-         <button type="submit" class="btnlink">ññññ</button>
-         <div class="text">probando probando 10-4</div>  
-       </div>
+    <img class="main_img" src="img/cuentas.jpg" alt="muchas cuentas">
 
-       <div class="image">
-         <img src="img/contraseña-segura.jpg" alt="contraseña"/>
-         <button type="submit" class="btnlink">cifra aquí</button>
-         <div class="text">probando probando 10-4</div>    
-       </div>
-
-       <div class="image">
-         <img src="img/El-gatoto.png" alt="app Cipher Chat"/>
-         <form method="LINK" action="https://agathap.github.io/SCL008-Cipher/src/">
-          <button type="submit" class="btnlink">Ir a Cipher Chat</button>
-         </form>
-         <div class="text">También puedes probar con Cipher Chat.<br> 
-           una divertida web de mensajería cifrada</div>  
-       </div>
-
-      <!-- flechas -->
-          <a href="#" id="previous" onclick="previous();">&#10094;</a>
-          <a href="#" id="next" onclick="next();">&#10095;</a>
-
-          <div class="dots">
-            <span class="dot active" onclick="showImage(0);"></span>
-            <span class="dot" onclick="showImage(1);"></span>
-            <span class="dot" onclick="showImage(2);"></span>
-          </div>
-      <!-- cierre del carousel -->
-    </section>
-    </div>
     `;
+    // <div class="row">
+    // <!-- CARRUSEL -->
+    // <section class="carousel" class="col s12 m12 l12 xl12">
+    //    <div class="image current">
+    //      <img src="img/cuentas.jpg" alt="persona con varias cuentas"/>
+    //      <button type="submit" class="btnlink">ññññ</button>
+    //      <div class="text">probando probando 10-4</div>  
+    //    </div>
+
+    //    <div class="image">
+    //      <img src="img/contraseña-segura.jpg" alt="contraseña"/>
+    //      <button type="submit" class="btnlink">cifra aquí</button>
+    //      <div class="text">probando probando 10-4</div>    
+    //    </div>
+
+    //    <div class="image">
+    //      <img src="img/El-gatoto.png" alt="app Cipher Chat"/>
+    //      <form method="LINK" action="https://agathap.github.io/SCL008-Cipher/src/">
+    //       <button type="submit" class="btnlink">Ir a Cipher Chat</button>
+    //      </form>
+    //      <div class="text">También puedes probar con Cipher Chat.<br> 
+    //        una divertida web de mensajería cifrada</div>  
+    //    </div>
+
+    //   <!-- flechas -->
+    //       <a href="#" id="previous" onclick="previous();">&#10094;</a>
+    //       <a href="#" id="next" onclick="next();">&#10095;</a>
+
+    //       <div class="dots">
+    //         <span class="dot active" onclick="showImage(0);"></span>
+    //         <span class="dot" onclick="showImage(1);"></span>
+    //         <span class="dot" onclick="showImage(2);"></span>
+    //       </div>
+    //   <!-- cierre del carousel -->
+    // </section>
+    // </div>
+  
 
 document.documentElement.scrollTop=0;
 
@@ -123,7 +126,7 @@ document.getElementById('go_cipher').addEventListener('click', () => {
       <h1 class="col s12 m12 l12 xl12">ingresa tu número</h1>
   </div>
   <div class="row">
-      <p id="error_messege" class="col s12 m12 l12 xl12"></p>
+      <p id="error_message" class="col s12 m12 l12 xl12"></p>
   </div>
   <div class="row">
     <form>
@@ -133,11 +136,11 @@ document.getElementById('go_cipher').addEventListener('click', () => {
     </form>
   </div>
   <div class="row">
-      <p class="max_characters" class="col s12 m2 offset-m3 l2 offset-l3 xl2 offset-xl3"> 18 carácteres máximo</p>
+      <p class="max_characters" class="col s12 m2 offset-m3 l2 offset-l3 xl2 offset-xl3">18 carácteres máximo</p>
       <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text" class="col s12 m5 l5 xl5"> 
       <button id="see" class="col s4 m2 l2 xl2">ver</button>
   </div>
-  <div class="row"
+  <div class="row">
     <div id="your_pass" class="col s12 m12 l12 xl12"></div>
   </div>
   <div class="row">
@@ -159,9 +162,9 @@ let empty = '';
       let vewPass = document.getElementById('user_text').value;
       document.getElementById('your_pass').innerHTML = `${vewPass}`;
       if(vewPass === ''){
-      document.getElementById('error_messege').innerHTML = `${errorText}`;
+      document.getElementById('error_message').innerHTML = `${errorText}`;
       }else{
-        document.getElementById('error_messege').innerHTML = `${empty}`;
+        document.getElementById('error_message').innerHTML = `${empty}`;
       };
   });
      
@@ -174,11 +177,11 @@ let empty = '';
       document.getElementById('result').innerHTML = `${resultEncode}`;
       //  Mensajes de error
       if(numEnc === ''){
-      document.getElementById('error_messege').innerHTML = `${errorNumb}`;
+      document.getElementById('error_message').innerHTML = `${errorNumb}`;
       } else if(textEnc === ''){
-      document.getElementById('error_messege').innerHTML = `${errorText}`;
+      document.getElementById('error_message').innerHTML = `${errorText}`;
       }else{
-        document.getElementById('error_messege').innerHTML =`${empty} `;
+        document.getElementById('error_message').innerHTML =`${empty} `;
       };
   });
     
@@ -190,11 +193,11 @@ let empty = '';
     let resultDecode = window.cipher.decode(numDec, textDec);
       document.getElementById('result').innerHTML = `${resultDecode}`;
       if(numDec === ''){
-      document.getElementById('error_messege').innerHTML = `${errorNumb}`;
+      document.getElementById('error_message').innerHTML = `${errorNumb}`;
       }else if(textDec === ''){
-      document.getElementById('error_messege').innerHTML = `${errorText}`;
+      document.getElementById('error_message').innerHTML = `${errorText}`;
       } else {
-      document.getElementById('error_messege').innerHTML = `${empty}`;
+      document.getElementById('error_message').innerHTML = `${empty}`;
       };
 });   
 
@@ -203,7 +206,7 @@ let empty = '';
     document.getElementById('user_text').value = `${empty}`;
     document.getElementById('your_pass').innerHTML = `${empty}`;
     document.getElementById('result').innerHTML = `${empty}`;
-    document.getElementById('error_messege').innerHTML = `${empty}`;
+    document.getElementById('error_message').innerHTML = `${empty}`;
   });
   document.documentElement.scrollTop=0; 
 });
