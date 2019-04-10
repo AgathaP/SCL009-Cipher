@@ -128,7 +128,7 @@ document.getElementById('go_cipher').addEventListener('click', () => {
   <div class="row">
     <form>
       <p class="tittle_input" class="col s12 m6 l6 xl6"> elige un número de desplazamiento
-        <input type="number" min="1" max="99" placeholder="N°" id="offset" class="s12 m6 l6 xl6">
+        <input type="number" min="-99" max="99" placeholder="N°" id="offset" class="s12 m6 l6 xl6">
       </p>
     </form>
   </div>
