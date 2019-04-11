@@ -123,20 +123,21 @@ document.getElementById('go_cipher').addEventListener('click', () => {
         
     `
   <div class="row">      
-      <h1 class="col s12 m12 l12 xl12">ingresa tu número</h1>
+      <h1 class="col s12 m12 l12 xl12 add_numb">ingresa tu número</h1>
   </div>
   <div class="row">
       <p id="error_message" class="col s12 m12 l12 xl12"></p>
   </div>
   <div class="row">
+  <p class="tittle_input" class="col s12 m6 l6 xl6"> 
+        elige un número de desplazamiento
+  </p>
     <form>
-      <p class="tittle_input" class="col s12 m6 l6 xl6"> elige un número de desplazamiento
         <input type="number" min="-99" max="99" placeholder="N°" id="offset" class="s12 m6 l6 xl6">
-      </p>
     </form>
   </div>
   <div class="row">
-      <p class="max_characters" class="col s12 m2 offset-m3 l2 offset-l3 xl2 offset-xl3">18 carácteres máximo</p>
+      <p class="col s12 m2 offset-m3 l2 offset-l3 xl2 offset-xl3 tittle_input">18 carácteres máximo</p>
       <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text" class="col s12 m5 l5 xl5"> 
       <button id="see" class="col s4 m2 l2 xl2">ver</button>
   </div>
