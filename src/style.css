@@ -214,7 +214,7 @@
     } */
 
     /* PANTALLA DE CIFRADO */
-    #error_messege{
+    #error_message{
         font-size: 15px;
         color: red;
     }
@@ -336,6 +336,7 @@
         border: 1px solid #ffffbf;
         font-size: 14px;
         height: 30px;
+        border-radius: 0%;
     }
     .button:hover{
         background-color: #ffffbf;
@@ -396,6 +397,12 @@
         background-color: #ffff8d;
         padding: 4px 7px;
         border-radius: 4px;
+    }
+    
+    /* PANTALLA DE CIFRADO */
+    #error_message{
+        font-size: 15px;
+        color: red;
     }
 
 }
