@@ -145,12 +145,12 @@ document.getElementById('go_cipher').addEventListener('click', () => {
     <div id="your_pass" class="col s12 m12 l12 xl12"></div>
   </div>
   <div class="row">
-      <button type="submit" class="convert" id="btn_encode" class="col s12 m6 l6 xl6">codificar</button>
-      <button type="submit" class="convert" id="btn_decode" class="col s12 m6 l6 xl6">decodificar</button>
+      <button type="submit" id="btn_encode" class="convert col s3 offset-s3 m1 offset-m5 l1 offset-l5 xl1 offset-xl5">codificar</button>
+      <button type="submit" id="btn_decode" class="convert col s3 m1 l1 xl1 ">decodificar</button>
   </div>
     <div id="result" class="col s12 m12 l12 xl12"></div>
   <div class="row">
-    <button id="delete" class="col s12 m12 l12 xl12">Borrar</button>
+    <button id="delete" class="col s2 offset-s5 m2 offset-m5 l2 offset-l5 xl2 offset-xl5">Borrar</button>
   </div>
   `;
 let errorNumb = 'Tienes que ingresar un número de desplazamiento';
@@ -166,7 +166,7 @@ let empty = '';
       document.getElementById('error_message').innerHTML = `${errorText}`;
       }else{
         document.getElementById('error_message').innerHTML = `${empty}`;
-      };
+      }
   });
      
      /* Evento que imprime en la pantalla eltexto cifrado, 
@@ -183,7 +183,7 @@ let empty = '';
       document.getElementById('error_message').innerHTML = `${errorText}`;
       }else{
         document.getElementById('error_message').innerHTML =`${empty} `;
-      };
+      }
   });
     
      /* Evento que imprime en la pantalla eltexto descifrado, 
@@ -199,7 +199,7 @@ let empty = '';
       document.getElementById('error_message').innerHTML = `${errorText}`;
       } else {
       document.getElementById('error_message').innerHTML = `${empty}`;
-      };
+      }
 });   
 
   document.getElementById('delete').addEventListener('click', () => {
@@ -231,9 +231,10 @@ document.getElementById('logo').addEventListener('click', () => {
 document.getElementById('go_about').addEventListener('click', () =>{
   document.getElementById('screen').innerHTML = 
   `
-  <div class="about_us" class="row">
-    <h1>About</h1>
-    <p class="paragraph_about" class="col s12 m9 offset-m2 l9 offset-l2 xl9 offset-xl2">
+  <div class="row">
+    <h1 class="col s12 m10 offset-m2 l10 offset-l2 xl10 offset-xl2 about_us">About</h1>
+
+    <p class="paragraph_about col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
       En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales 
       preocupaciones es no olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos 
       citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas 
@@ -242,10 +243,10 @@ document.getElementById('go_about').addEventListener('click', () =>{
       pensada en hacer que una misma contraseña sirva para todas nuestras cuentas de manera segura.
     </p>
     
-    <p class="paragraph_about" class="col s12 m9 offset-m2 l9 offset-l2 xl9 offset-xl2">
+    <p class="paragraph_about col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
       Como ya sabemos, menejar una misma clave para todas nuestras cuentas en la red, es inseguro, sin embargo, 
       hoy en día nos manejamos casi en su totalidad por medio de internet, por lo que recordar claves distintas
-      para todas nuestras cuentas en citios web, se torna complicado. Es por está razón que ***** ofrece 
+      para todas nuestras cuentas en citios web, se torna complicado. Es por está razón que Llavero ofrece 
       simplicidad y seguridad. El usuario deberá recordar una unica clave, ya que lo unico que cambiará en sus 
       contraseñas, entre una página y otra, será el número de desplazamiento que usó al momento de codificarla 
       en nuestro citio. Incluso si recordar esto parece difícil, pensémos en que aunque anontacemos nuestro 

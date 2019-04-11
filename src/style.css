@@ -253,30 +253,30 @@
         text-align: center;
     }
 
-    .max_characters{
+    .tittle_input{
         text-align: center;
         font-size: 15px;
         font: grey;
     }
 
     .convert{
-    margin: 2% 0%;
+    margin: 1% 1%;
+    height: 35px;
     }
 
     #delete{
         width: 150px;
-        height: 30px;
-        top: 0%;
+        height: 35px;
         margin-left: 44%;
+        margin-top: 3%;
     }
 
     button{
         background-color: #ffff8d;
-        padding: 4px 7px;
         border-radius: 4px;
     }
 
-    #see:hover, button:hover{
+    button:hover{
         background-color: #cacc5d;
     }
 
@@ -289,13 +289,13 @@
     /* Pantalla de About */
     .about_us{
         text-align: left;
-        margin: 9% 1% 9% 6%;
+        margin: 9% 1% 4% 20%;
     }
 
     .paragraph_about{
         width: 75%;
-        margin-bottom: 6px;
-        margin-top: 2%;
+        text-align: left;
+        margin: 0% 1% 1% 0%;
     }
 }
 
@@ -402,6 +402,7 @@
         background-color: #ffff8d;
         padding: 4px 7px;
         border-radius: 4px;
+        font-size: 15px;
     }
     
     /* PANTALLA DE CIFRADO */
@@ -415,19 +416,21 @@
         color: #8d8d8d;
         font-size: 16px;
     }
+
     /* Texto "ingrsa tu número" */
     .add_numb{
         text-align: center;
         font-size: 28px;
     }
+
     #offset{
         height: 20px;
         width: 30px;
         font-size: 19px;
-        border: solid #140078;
-        /* margin-top: 6%; */
+        border: solid #140078 2px;
         margin-left: 49%;
     }
+
     .tittle_input{
         text-align: center;
     }
@@ -436,7 +439,44 @@
         height: 25px;
         width: 33%;
         font-size: 25px;
-        border: solid #140078;
+        border: solid #140078 2px;
         margin-left: 33%;
+    }
+
+    #your_pass, #result{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #see{
+        width: 30px;
+        height: 20px;
+        margin-left: 1%;
+        padding: 1%;
+        padding-bottom: 4%;
+    }
+
+    .convert{
+        margin: 1% 1%;
+        width: 30px;
+        height: 30px;
+        }
+
+    #delete{
+        height: 30px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }    
+
+    /* Pantalla de About */
+    .about_us{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .paragraph_about{
+        width: 75%;
+        text-align: left;
+        margin: 2% 1% 5% 3%;
     }
 }
