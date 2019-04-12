@@ -129,7 +129,7 @@ document.getElementById('go_cipher').addEventListener('click', () => {
       <p id="error_message" class="col s12 m12 l12 xl12"></p>
   </div>
   <div class="row">
-  <p class="tittle_input" class="col s12 m6 l6 xl6"> 
+  <p class="tittle_input col s12 m6 l6 xl6"> 
         elige un número de desplazamiento
   </p>
     <form>
