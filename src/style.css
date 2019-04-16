@@ -2,6 +2,8 @@
 @media only screen and (min-width: 768px){
     body{
         text-align: center;
+        height: 900px;
+        scroll-margin-bottom: 0%;
     }
 
         header{
@@ -48,7 +50,7 @@
             /* margin: 1% 0%; */
             }
 
-        .strong_text {
+        .modal_content p {
             text-align: left;
         }
 
@@ -79,13 +81,12 @@
     }
     .nav_bar ul{
         list-style-type: none;
-        text-align: right;
+        text-align: left;
     }
 
     .nav_bar li{
         display: inline;
         text-align: center;
-        margin: 0 10px 0 0;
     } 
 
     .button{
@@ -104,8 +105,8 @@
         color: #140078;
     }
 
+    
     /* PANTALLA DE INICIO */
-
     .main_img {
         position: relative;
         width: 700px;
@@ -224,18 +225,18 @@
     }
 
     /* Texto "ingrsa tu número" */
-    .add_numb{
-        font-size: 50px;
+    .tittle_input{
+        text-align: right;
+        font-size: 15px;
+        font: grey;
     }
 
     #offset{
-        top: 0%;
-        left: 0%;
         height: 30px;
         width: 40px;
         font-size: 20px;
         border: solid #140078;
-        /* margin-top: 6%; */
+        text-align: center;
     }
 
     #user_text{
@@ -251,12 +252,6 @@
     #your_pass, #result{
         font-size: 19px;
         text-align: center;
-    }
-
-    .tittle_input{
-        text-align: center;
-        font-size: 15px;
-        font: grey;
     }
 
     .convert{
@@ -302,6 +297,7 @@
 /* Para pantallas de dispositivos moviles */
 
 @media only screen and (max-width: 600px){
+
     header{
         background-color: #512da8;
         text-align: left;

@@ -122,36 +122,38 @@ document.getElementById('go_cipher').addEventListener('click', () => {
   document.getElementById('screen').innerHTML =
         
     `
-  <div class="row">      
-      <h1 class="col s12 m12 l12 xl12 add_numb">ingresa tu número</h1>
-  </div>
-  <div class="row">
-      <p id="error_message" class="col s12 m12 l12 xl12"></p>
-  </div>
-  <div class="row">
-  <p class="tittle_input col s12 m6 l6 xl6"> 
-        elige un número de desplazamiento
-  </p>
-    <form>
-        <input type="number" min="-99" max="99" placeholder="N°" id="offset" class="s12 m6 l6 xl6">
-    </form>
-  </div>
-  <div class="row">
-      <p class="col s12 m2 offset-m3 l2 offset-l3 xl2 offset-xl3 tittle_input">18 carácteres máximo</p>
-      <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text" class="col s12 m5 l5 xl5"> 
-      <button id="see" class="col s4 m2 l2 xl2">ver</button>
-  </div>
-  <div class="row">
-    <div id="your_pass" class="col s12 m12 l12 xl12"></div>
-  </div>
-  <div class="row">
-      <button type="submit" id="btn_encode" class="convert col s3 offset-s3 m1 offset-m5 l1 offset-l5 xl1 offset-xl5">codificar</button>
-      <button type="submit" id="btn_decode" class="convert col s3 m1 l1 xl1 ">decodificar</button>
-  </div>
-    <div id="result" class="col s12 m12 l12 xl12"></div>
-  <div class="row">
-    <button id="delete" class="col s2 offset-s5 m2 offset-m5 l2 offset-l5 xl2 offset-xl5">Borrar</button>
-  </div>
+  <section>
+    <div class="row">      
+        <h1 class="col s12 m12 l12 xl12 add_numb">ingresa tu número</h1>
+    </div>
+    <div class="row">
+        <p id="error_message" class="col s12 m12 l12 xl12"></p>
+    </div>
+    <div class="row">
+    <p class="tittle_input col s12 m6 l6 xl6"> 
+          Elige un número de desplazamiento
+    </p>
+      <form>
+          <input type="number" min="-99" max="99" placeholder="N°" id="offset" class="col s12 m6 l6 xl6">
+      </form>
+    </div>
+    <div class="row">
+        <p class="col s12 m2 offset-m3 l2 offset-l3 xl2 offset-xl3 tittle_input">18 carácteres máximo</p>
+        <input type="password" placeholder="Tu constraseña" maxlength="18" id="user_text" class="col s12 m5 l5 xl5"> 
+        <button id="see" class="col s4 m2 l2 xl2">ver</button>
+    </div>
+    <div class="row">
+      <div id="your_pass" class="col s12 m12 l12 xl12"></div>
+    </div>
+    <div class="row">
+        <button type="submit" id="btn_encode" class="convert col s3 offset-s3 m1 offset-m5 l1 offset-l5 xl1 offset-xl5">codificar</button>
+        <button type="submit" id="btn_decode" class="convert col s3 m1 l1 xl1 ">decodificar</button>
+    </div>
+      <div id="result" class="col s12 m12 l12 xl12"></div>
+    <div class="row">
+      <button id="delete" class="col s2 offset-s5 m2 offset-m5 l2 offset-l5 xl2 offset-xl5">Borrar</button>
+    </div>
+  </section>
   `;
 let errorNumb = 'Tienes que ingresar un número de desplazamiento';
 let errorText = 'Tienes que ingresar un texto';
@@ -231,29 +233,29 @@ document.getElementById('logo').addEventListener('click', () => {
 document.getElementById('go_about').addEventListener('click', () =>{
   document.getElementById('screen').innerHTML = 
   `
-  <div class="row">
-    <h1 class="col s12 m10 offset-m2 l10 offset-l2 xl10 offset-xl2 about_us">About</h1>
+  <article class="row">
+      <h1 class="col s12 m10 offset-m2 l10 offset-l2 xl10 offset-xl2 about_us">About</h1>
 
-    <p class="paragraph_about col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
-      En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales 
-      preocupaciones es no olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos 
-      citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas 
-      de instituciones bancarias. Son demasiadas las contraseñas que debemos manejar a diario, y es además, 
-      poco seguro ponerle una misma contraseña a todas nuestras cuentas. Por lo que esta aplicación está 
-      pensada en hacer que una misma contraseña sirva para todas nuestras cuentas de manera segura.
-    </p>
-    
-    <p class="paragraph_about col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
-      Como ya sabemos, menejar una misma clave para todas nuestras cuentas en la red, es inseguro, sin embargo, 
-      hoy en día nos manejamos casi en su totalidad por medio de internet, por lo que recordar claves distintas
-      para todas nuestras cuentas en citios web, se torna complicado. Es por está razón que Llavero ofrece 
-      simplicidad y seguridad. El usuario deberá recordar una unica clave, ya que lo unico que cambiará en sus 
-      contraseñas, entre una página y otra, será el número de desplazamiento que usó al momento de codificarla 
-      en nuestro citio. Incluso si recordar esto parece difícil, pensémos en que aunque anontacemos nuestro 
-      numero de desplazamiento en un papel, no necesitariamos anotar la contraseña, por lo que aún así nuestras 
-      cuentas estarían protegidas.
-    </p>
-  </div>
+      <p class="paragraph_about col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
+        En tiempos dónde todo lo manejamos a través de dispositivos tecnológicos, una de las principales 
+        preocupaciones es no olvidar las constraseñas que nos permiten ingresar a nuestras cuentas en distintos 
+        citios web, desde foros, facebook, hasta cosas aún más importantes de proteger, como cuentas en páginas 
+        de instituciones bancarias. Son demasiadas las contraseñas que debemos manejar a diario, y es además, 
+        poco seguro ponerle una misma contraseña a todas nuestras cuentas. Por lo que esta aplicación está 
+        pensada en hacer que una misma contraseña sirva para todas nuestras cuentas de manera segura.
+      </p>
+      
+      <p class="paragraph_about col s12 m10 offset-m1 l10 offset-l1 xl10 offset-xl1">
+        Como ya sabemos, menejar una misma clave para todas nuestras cuentas en la red, es inseguro, sin embargo, 
+        hoy en día nos manejamos casi en su totalidad por medio de internet, por lo que recordar claves distintas
+        para todas nuestras cuentas en citios web, se torna complicado. Es por está razón que Llavero ofrece 
+        simplicidad y seguridad. El usuario deberá recordar una unica clave, ya que lo unico que cambiará en sus 
+        contraseñas, entre una página y otra, será el número de desplazamiento que usó al momento de codificarla 
+        en nuestro citio. Incluso si recordar esto parece difícil, pensémos en que aunque anontacemos nuestro 
+        numero de desplazamiento en un papel, no necesitariamos anotar la contraseña, por lo que aún así nuestras 
+        cuentas estarían protegidas.
+      </p>
+  </article>
   `
   document.documentElement.scrollTop=0; 
 });

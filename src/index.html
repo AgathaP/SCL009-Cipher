@@ -1,41 +1,42 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
      <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/asterisco.ico">
+     <link rel="shortcut icon" href="img/asterisco.ico">
     <title>Llavero</title>
   </head>
   <body>
 
-      <!-- MODAL -->
-      <div id="my_modal" class="modal row">
+    <!-- MODAL -->
+    <nav id="my_modal" class="modal row">
 
-          <!-- Modal content -->
-        <div class="modal_content col s12 m12 l12 xl12">
-            <span id="close">&times;</span>
-            <h4>Modo de uso:</h4>
-            <p class="strong_text">
-              Esta página basa su funcionamiento en el "codigo Cesar"
-              Para usarla correctamente primero debes escoger un número de desplazamiento, que representa
-              cuantas letras de desface tendrá el alfabeto, y con ello tu contraseña.
-            </p>
-            <p class="strong_text">
-              Puedes cifrar y descifrar letras mayúsuculas, letras minúsculas y números.
-            </p>
-            <p class="strong_text">
-              Si no has escuchado antes sobre el cifrado Cesar puedes visitar este
-              <a href="https://es.wikipedia.org/wiki/Cifrado_César" target="_blank">link de wikipedia</a>.
-            </p>
-            <p class="strong_text">
-              Puedes tener una misma clave para todas tus cuentas, con números de desplazamiento diferentes 
-              para cada una.
-            </p>
-            <p><strong>Antes de cifrar, recuerda poner un número de desplazamiento</strong></p>
-            <button id="go_cipher">Entendido</button>
-        </div>
-      </div>
+        <!-- Modal content -->
+      <article class="modal_content col s12 m12 l12 xl12">
+          <span id="close">&times;</span>
+          <h4>Modo de uso:</h4>
+          <p>
+            Esta página basa su funcionamiento en el "codigo Cesar"
+            Para usarla correctamente primero debes escoger un número de desplazamiento, que representa
+            cuantas letras de desface tendrá el alfabeto, y con ello tu contraseña.
+            <br>
+            Puedes cifrar y descifrar letras mayúsuculas, letras minúsculas y números.
+            <br>
+            Si no has escuchado antes sobre el cifrado Cesar puedes visitar este
+            <a href="https://es.wikipedia.org/wiki/Cifrado_César" target="_blank">link de wikipedia</a>.
+            <br>
+            Puedes tener una misma clave para todas tus cuentas, con números de desplazamiento diferentes 
+            para cada una.
+            <br>
+            <strong>Antes de cifrar, recuerda poner un número de desplazamiento</strong>
+          </p>
+          <button id="go_cipher">Entendido</button>
+        </article>
+      </nav>
 
       <!-- ENCABEZADO DE LA PÁGINA -->
     <header>
@@ -44,7 +45,7 @@
 
         <!-- BARRA DE NAVEGACIÓN -->
       <nav class="nav_bar nav-wrapper row">
-            <ul class="right col m12 l12 xl12 "> <!--"hide-on-med-and-down" -->
+            <ul class="right col m12 l12 xl12">
               <li><button class="button" id="go_home">Home</button></li>
               <li><button class="button" id="go_about">About</button></li>
               <!-- Botón que abre el Modal -->
